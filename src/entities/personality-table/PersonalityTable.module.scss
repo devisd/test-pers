@@ -1,0 +1,16 @@
+.table {
+  @apply w-full border-collapse;
+  &Row {
+    @apply px-[10px] py-[15px] text-left;
+  }
+  tr {
+    @apply h-[66px];
+    th {
+      @apply text-left;
+    }
+  }
+}
+
+.tableContent {
+  @apply mr-4 flex w-[90%] rounded-2xl bg-white bg-opacity-5 px-[10px] py-[15px] last:mr-0;
+}

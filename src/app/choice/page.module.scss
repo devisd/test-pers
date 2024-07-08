@@ -1,0 +1,27 @@
+.head {
+  @apply mb-8 flex items-center justify-between;
+}
+
+.title {
+  @apply text-xl font-semibold leading-[48px];
+}
+
+.btns {
+  @apply flex gap-4;
+
+  a {
+    @apply rounded-3xl bg-white px-[23px] py-2 text-m font-normal leading-6 text-black;
+  }
+
+  button {
+    @apply shrink-0;
+  }
+}
+
+.upload {
+  @apply cursor-pointer rounded-lg bg-dark-04 px-3 py-2 text-s font-medium leading-6;
+
+  svg {
+    @apply ml-3;
+  }
+}

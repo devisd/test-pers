@@ -1,0 +1,52 @@
+.video {
+  @apply my-8;
+  &Title {
+    @apply mb-4 text-l font-semibold leading-6;
+  }
+}
+
+.list {
+  @apply w-full divide-y divide-white divide-opacity-10 rounded-2xl bg-white bg-opacity-10 p-6;
+
+  &Item {
+    @apply grid grid-cols-2 py-5;
+    &:first-child {
+      @apply pt-0;
+    }
+    &:last-child {
+      @apply pb-0;
+    }
+    &Wrapper {
+      @apply flex items-center;
+
+      &Image {
+        @apply mr-8 h-auto object-contain;
+      }
+
+      &Description {
+        &Heading {
+          @apply text-m font-semibold leading-6;
+        }
+        &Text {
+          @apply text-s font-medium leading-6;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  @apply flex items-center justify-end gap-5;
+  &Wrap {
+    @apply relative;
+    &Send {
+      @apply rounded-lg bg-black px-2 py-3;
+      span {
+        @apply mr-2;
+      }
+    }
+  }
+  a {
+    @apply inline-flex;
+  }
+}

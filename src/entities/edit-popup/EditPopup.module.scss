@@ -1,0 +1,22 @@
+.popup {
+  @apply absolute -top-[15px] right-[175px] flex w-[700px] items-start justify-between gap-[10px] rounded-2xl bg-black bg-opacity-60 p-6 shadow-2.4xl backdrop-blur-xl;
+  &Content {
+    @apply grid w-full gap-[10px];
+    &Edit {
+      @apply flex items-center gap-[5px] p-4 text-m font-normal leading-6;
+      input {
+        @apply w-full border-none bg-transparent outline-none;
+      }
+    }
+    &Project {
+      @apply ml-4 flex h-[48px] w-[250px] items-center justify-center rounded-2xl bg-white;
+      &Button {
+        @apply text-m font-semibold leading-6 text-black;
+      }
+    }
+  }
+}
+
+.centered {
+  @apply absolute left-[40vw] top-[40%] bg-black bg-opacity-60 shadow-2.4xl backdrop-blur-xl;
+}

@@ -1,0 +1,38 @@
+.container {
+  @apply mx-auto mt-[300px] flex max-w-[590px] flex-col items-center justify-center gap-[20px];
+
+  video {
+    @apply h-[332px] w-[590px];
+  }
+}
+.video {
+  @apply flex h-[332px] w-[590px] rounded-[10px] bg-white bg-opacity-[.1];
+
+  svg {
+    @apply mx-auto flex;
+  }
+}
+
+.btns {
+  @apply flex w-full flex-col gap-[20px];
+
+  &Download {
+    @apply gap-2 rounded-[12px] bg-white bg-opacity-[.1] p-2 text-center text-m font-semibold leading-6;
+  }
+  &Question {
+    @extend .btnsDownload;
+    @apply text-center;
+  }
+}
+
+.loading {
+  @apply h-[332px] w-[590px] rounded-[10px] bg-white bg-opacity-[.1] text-center;
+
+  &Circle {
+    @apply mx-auto mt-[120px] opacity-40;
+  }
+
+  span {
+    @apply my-10 block text-center text-l opacity-40;
+  }
+}

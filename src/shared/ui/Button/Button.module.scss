@@ -1,0 +1,12 @@
+.base {
+  @apply cursor-pointer;
+}
+
+.white {
+  @apply rounded-3xl bg-white px-[23px] py-2 text-m font-normal leading-6 text-black;
+}
+
+.disabled {
+  @extend .white;
+  @apply pointer-events-none bg-gray-600;
+}

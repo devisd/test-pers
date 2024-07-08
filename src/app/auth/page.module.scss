@@ -1,0 +1,20 @@
+.auth {
+  @apply mt-[255px] flex flex-col items-center gap-5;
+
+  h1 {
+    @apply text-m font-semibold leading-6;
+  }
+}
+
+.link {
+  @apply flex items-center justify-center gap-[10px];
+
+  &Login {
+    @apply shrink-0 rounded-2xl bg-white px-[71px] py-3 text-center text-m font-semibold leading-6 text-black transition-all duration-500 hover:bg-purple-800 hover:text-white;
+  }
+
+  &Register {
+    @extend .linkLogin;
+    @apply bg-[#9451E9] px-[33px] text-white hover:bg-white hover:text-black;
+  }
+}

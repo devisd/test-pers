@@ -1,0 +1,36 @@
+.head {
+  @apply relative mb-8 flex items-center justify-between;
+}
+
+.title {
+  @apply text-xl font-semibold leading-[48px];
+}
+
+.btn {
+  @apply mr-10 flex gap-4;
+
+  a {
+    @apply rounded-2xl bg-white px-[23px] py-2 text-m font-normal leading-6 text-black;
+  }
+}
+
+.list {
+  @apply grid grid-cols-5 items-center gap-4;
+  &Item {
+    @apply text-center;
+    &Text {
+      @apply mb-2;
+    }
+  }
+}
+
+.form {
+  @apply mb-8 flex gap-4;
+  &Link {
+    @apply w-[260px] rounded-2xl bg-white bg-opacity-5 p-[10px] text-[16px] font-normal leading-6 text-white outline-none;
+  }
+}
+
+.dropDown {
+  @apply divide-y-2 divide-white divide-opacity-10;
+}

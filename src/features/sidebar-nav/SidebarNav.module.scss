@@ -1,0 +1,65 @@
+.sidebarNav {
+  @apply mt-20 overflow-hidden;
+  &List {
+    @apply flex w-full flex-col gap-10;
+    transition: all 0.5s ease;
+    &Item {
+      @apply flex w-full items-center gap-[10px] transition duration-700 ease-in-out;
+      &Support {
+        @apply flex h-[48px] w-full cursor-pointer gap-[10px] p-3;
+        svg {
+          @apply shrink-0;
+        }
+      }
+    }
+  }
+}
+
+.wrap {
+  @apply flex h-[48px] shrink-0 cursor-pointer items-end rounded-[8px] bg-black bg-opacity-[0.2] p-3;
+  svg {
+    @apply shrink-0;
+  }
+
+  &Content {
+    @apply ml-[10px] flex w-full items-center justify-between gap-[10px] transition-all delay-150;
+  }
+}
+
+.reverse {
+  @apply flex rotate-180;
+}
+
+.section {
+  @apply flex w-full flex-col gap-2;
+}
+
+.menu {
+  @apply mt-2 flex;
+  &Titles {
+    @apply flex w-full flex-col justify-around;
+    &Text {
+      @apply w-full;
+      &Position {
+        @apply flex h-[48px] w-full cursor-pointer items-center justify-between pl-3;
+
+        button {
+          @apply ml-auto mr-0;
+        }
+      }
+    }
+    &Back {
+      @apply h-[48px] cursor-pointer rounded-[8px] bg-black bg-opacity-[0.2] p-3;
+    }
+  }
+  &Connectors {
+    @apply flex;
+    svg {
+      @apply shrink-0;
+    }
+  }
+}
+
+.new {
+  @apply left-[50%] top-[50%];
+}

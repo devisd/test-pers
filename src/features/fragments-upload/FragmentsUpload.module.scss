@@ -1,0 +1,87 @@
+.head {
+  @apply mb-4 flex w-full items-center gap-4;
+
+  h2 {
+    @apply text-l font-semibold leading-6;
+  }
+
+  button,
+  label {
+    @apply cursor-pointer rounded-lg bg-dark-04 px-3 py-2 text-s font-medium leading-6;
+
+    svg {
+      @apply ml-3;
+    }
+  }
+}
+
+.content {
+  @apply flex gap-4;
+}
+
+.fragments {
+  @apply flex max-w-[608px] flex-col gap-4;
+
+  &Head {
+    @apply flex gap-4;
+
+    label {
+      @apply flex cursor-pointer items-center rounded-lg bg-dark-04 px-3 py-2 text-s font-medium leading-6;
+
+      &:has(:checked) {
+        @apply bg-violet;
+      }
+    }
+
+    svg {
+      @apply mr-3;
+    }
+  }
+
+  &List {
+    @apply flex w-[608px] flex-col gap-4;
+    li {
+      @apply flex flex-row items-center gap-4 rounded-2xl bg-violet p-4 text-m leading-6;
+
+      svg {
+        @apply cursor-pointer;
+      }
+
+      &:has(:checked) {
+        @apply bg-violet-02;
+      }
+    }
+
+    &Number {
+      @apply ml-4;
+    }
+  }
+}
+
+.player {
+  @apply mt-4 flex justify-center gap-3;
+
+  li {
+    @apply h-[80px] w-[80px] rounded-lg bg-violet p-[5px];
+
+    button {
+      @apply relative flex flex-col;
+
+      p {
+        @apply text-ellipsis text-left text-s leading-6;
+      }
+
+      svg {
+        @apply mx-auto mt-[15px] shrink-0;
+      }
+    }
+  }
+
+  &Middle {
+    @apply h-20 w-20 bg-black bg-opacity-[0.4] last:hidden;
+  }
+}
+
+.elementCount {
+  @apply absolute right-[15px] top-[30px] text-s;
+}

@@ -1,0 +1,23 @@
+.head {
+  @apply relative mb-8 flex items-center justify-between;
+}
+
+.title {
+  @apply text-xl font-semibold leading-[48px];
+}
+
+.btns {
+  @apply flex gap-4;
+
+  a {
+    @apply rounded-2xl bg-white px-[23px] py-2 text-m font-normal leading-6 text-black;
+  }
+
+  button {
+    @apply shrink-0;
+  }
+}
+
+.addBtn {
+  @apply mt-4 flex gap-[10px] rounded-2xl bg-white bg-opacity-5 p-[10px];
+}

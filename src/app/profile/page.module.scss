@@ -1,0 +1,10 @@
+.title {
+  @apply mb-[105px] flex text-xl font-semibold leading-[48px];
+}
+
+.profile {
+  @apply opacity-30;
+  img {
+    @apply h-auto;
+  }
+}

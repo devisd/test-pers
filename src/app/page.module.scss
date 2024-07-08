@@ -1,0 +1,10 @@
+.container {
+  @apply ml-[340px] pt-[180px];
+}
+
+.title {
+  @apply text-xl font-semibold leading-[48px];
+}
+.wrap {
+  @apply flex items-center justify-between;
+}

@@ -1,0 +1,11 @@
+.label {
+  @apply flex w-[197px] items-center justify-between rounded-2xl bg-white bg-opacity-5 p-[10px];
+
+  input {
+    @apply h-fit max-w-[145px] bg-transparent text-m leading-6;
+
+    &::placeholder {
+      @apply text-white;
+    }
+  }
+}

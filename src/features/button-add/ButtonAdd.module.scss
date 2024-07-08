@@ -1,0 +1,6 @@
+.button {
+  @apply flex items-center justify-between rounded-lg bg-white bg-opacity-5 px-3 py-2;
+  span {
+    @apply mr-3;
+  }
+}

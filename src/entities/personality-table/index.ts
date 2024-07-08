@@ -1,0 +1,1 @@
+export { PersonalityTable } from './PersonalityTable'

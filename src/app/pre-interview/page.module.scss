@@ -1,0 +1,26 @@
+.register {
+  @apply mx-auto my-60 max-w-[394px] gap-5 font-semibold;
+
+  &Head {
+    @apply flex;
+
+    h1 {
+      @apply mx-auto mb-5 pt-1 text-center text-m leading-6;
+    }
+  }
+
+  label {
+    @apply my-5 flex flex-col;
+
+    input {
+      @apply bg-violet-01 mt-1 w-full rounded-[18px] px-[25px] py-[19px] text-[14px] font-medium leading-[149.02%] -tracking-[3.5%] text-white;
+      &::placeholder {
+        @apply text-violet-08;
+      }
+    }
+  }
+
+  &Btn {
+    @apply h-12 w-full rounded-2xl transition-all duration-500 hover:bg-purple-800 hover:text-white;
+  }
+}

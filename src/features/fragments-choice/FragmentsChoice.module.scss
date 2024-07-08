@@ -1,0 +1,89 @@
+.head {
+  @apply mb-4 flex w-full items-center gap-4;
+
+  h2 {
+    @apply text-l font-semibold leading-6;
+  }
+
+  button,
+  label {
+    @apply cursor-pointer rounded-lg bg-dark-04 px-3 py-2 text-s font-medium leading-6;
+
+    svg {
+      @apply ml-3;
+    }
+  }
+}
+
+.content {
+  @apply flex gap-4;
+}
+
+.fragments {
+  @apply flex max-w-[608px] flex-col gap-4;
+
+  &Head {
+    @apply flex gap-4;
+
+    label {
+      @apply flex cursor-pointer items-center rounded-lg bg-dark-04 px-3 py-2 text-s font-medium leading-6;
+
+      &:has(:checked) {
+        @apply bg-violet;
+      }
+    }
+
+    svg {
+      @apply mr-3;
+    }
+  }
+
+  &List {
+    @apply flex w-[608px] flex-col gap-4;
+    li {
+      @apply flex flex-row items-center gap-4 rounded-2xl bg-violet p-4 text-m leading-6;
+
+      svg {
+        @apply cursor-pointer;
+      }
+
+      label,
+      input {
+        @apply bg-transparent;
+      }
+
+      &:has(:checked) {
+        @apply bg-violet-02;
+      }
+    }
+
+    &Number {
+      @apply ml-4;
+    }
+  }
+}
+
+.timeBar {
+  @apply relative flex h-[7px] cursor-pointer items-center bg-[#6c6c6c];
+}
+
+.timeBarLabelStart,
+.timeBarLabelEnd {
+  @apply absolute -bottom-[20px] text-s;
+}
+
+.timeBarLabelStart {
+  @apply left-0;
+}
+
+.timeBarLabelEnd {
+  @apply right-0;
+}
+
+.timeBarSelected {
+  @apply -mt-[6px] h-[20px] w-[15px] bg-[#f940f9];
+}
+
+.timeBarHover {
+  @apply absolute -top-[20px] rounded bg-gray-300 px-1 pt-[2px];
+}

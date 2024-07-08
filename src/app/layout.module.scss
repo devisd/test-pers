@@ -1,0 +1,31 @@
+.sidebar {
+  @apply shadow-0.4xl fixed left-0 top-0 z-50 h-[100vh] w-[340px] border-r-[1.5px] border-r-white border-opacity-10 bg-white bg-opacity-5 px-6 py-10 backdrop-blur-xl;
+  transition: all 0.5s ease;
+
+  &Arrow {
+    @apply absolute -right-3 top-20;
+  }
+}
+
+.logo {
+  @apply fixed h-[48px] w-[48px];
+}
+
+.close {
+  @apply w-[98px];
+}
+
+.main {
+  height: 100vh;
+  margin-left: 340px;
+  width: calc(100% - 340px);
+  transition: all 0.5s ease;
+}
+.sidebar.close ~ .main {
+  margin-left: 98px;
+  width: calc(100% - 98px);
+}
+
+.rotate {
+  @apply rotate-180;
+}

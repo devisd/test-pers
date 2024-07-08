@@ -1,0 +1,66 @@
+.load {
+  @apply grid grid-rows-1 justify-center gap-4 text-center;
+  &Title {
+    @apply mb-4 text-l font-semibold leading-6;
+  }
+}
+
+.links {
+  @apply flex justify-between;
+  &Completely {
+    @apply flex h-10 w-[246px] items-center justify-center rounded-xl bg-white text-m font-semibold leading-6 text-black;
+    svg {
+      @apply mr-2 shrink-0;
+    }
+  }
+  &Fragment {
+    @apply flex h-10 w-[246px] items-center justify-center rounded-2xl bg-white bg-opacity-5 text-m font-semibold leading-6;
+    svg {
+      @apply mr-2 shrink-0;
+    }
+  }
+}
+
+.video {
+  @apply w-[500px] rounded-2xl border border-dashed border-white px-6 py-8 transition-all duration-300 ease-in-out;
+
+  &List {
+    @apply flex items-center justify-between p-2;
+    &Text {
+      @apply max-w-[350px] justify-start truncate;
+      span {
+        @apply mr-2;
+      }
+    }
+    &Delete {
+      svg {
+        @apply shrink-0;
+      }
+    }
+  }
+  &Upload {
+    @apply mb-4 rounded-full bg-[#5081FF] p-3;
+  }
+  &Action {
+    @apply text-m font-semibold leading-6;
+  }
+  &Description {
+    @apply text-s font-normal leading-5;
+  }
+}
+
+.divide {
+  @apply divide-y divide-white divide-opacity-30;
+}
+
+.dragOver {
+  @apply border border-dashed border-white bg-white bg-opacity-10;
+}
+
+.hidden {
+  @apply m-0 h-0 w-0 overflow-hidden p-0 leading-none opacity-0;
+}
+
+.download {
+  @apply ml-auto mr-auto w-[175px] rounded-2xl bg-white bg-opacity-10 px-6 py-3;
+}
